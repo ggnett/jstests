@@ -1,0 +1,56 @@
+.fix-form_form {
+    height:100%;
+    display:grid;   
+    grid-template-columns: max-content min-content;
+    grid-template-rows: min-content max-content;
+    justify-content: center;
+    align-content: center;
+}
+
+.form_button {
+    grid-column:2 /3;
+}
+
+.form_edit {
+    width:430px;
+    height:330px;
+    display:flex;
+    flex-direction: column;
+    background-color:white;
+    border-radius: 15px;
+}
+
+.edit {
+    width:358px;
+    margin:0 auto;
+    font-size: 14px;
+    border:0;
+    border-bottom:1px solid black;
+    padding-bottom:5px;
+    outline: none;
+}
+
+.edit_title {
+    width:358px;
+    margin:34px auto 54px auto;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.edit_name {
+    margin-bottom:30px;
+}
+
+.edit_work {
+    margin-bottom: 48px;;
+}
+
+.edit_save {
+    width:358px;
+    height:50px;
+    background-color: black;
+    color:white;
+    font-weight: 900;
+    font-size:18px;
+    margin:0 auto;
+}
