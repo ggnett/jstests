@@ -1,0 +1,6 @@
+@import url(./styles/normalize.css);
+@import url(./styles/header/header.css);
+@import url(./styles/profile/profile.css);
+@import url(./styles/elements/elements.css);
+@import url(./styles/footer/footer.css);
+@import url(./styles/fix-form/fix-form.css);

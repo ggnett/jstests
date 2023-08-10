@@ -1,0 +1,44 @@
+.elements_card {
+    width:282px;
+    height:361px;
+    display:grid;
+    grid-template-columns: 1fr 50px;
+    grid-template-rows: 282px 1fr;
+    grid-template-areas:
+    "imag imag";
+    border-radius: 11px;;
+    background-color: white;
+}
+
+.card_image {
+    grid-area:imag;
+    width:282px;
+    height:282px;
+}
+
+.card_button {
+    background-image: url(../../image/heart.svg);
+    background-position: center;
+    background-size: 22px 19px;
+    background-repeat: no-repeat;
+    width:22px;
+    height:19px;
+    align-self: center;
+    border:0;
+    background-color: white;;
+}
+
+.card_title {
+    font-size:24px;
+    align-self: center;
+    margin-left:21px;
+    margin-right:42px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    font-weight: 900;
+}
+
+.card_button:hover {
+    opacity: 0.3;
+}
