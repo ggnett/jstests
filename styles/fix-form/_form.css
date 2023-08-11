@@ -2,13 +2,21 @@
     height:100%;
     display:grid;   
     grid-template-columns: max-content min-content;
-    grid-template-rows: min-content max-content;
+    grid-template-rows: max-content min-content;
     justify-content: center;
     align-content: center;
+    /* background-color: green; */
+    gap:10px;
+    grid-template-areas: ". close"
+    "edit .";
 }
 
-.form_button {
-    grid-column:2 /3;
+.form_button-close {
+    position: relative;
+    width:30px;
+    height:30px;
+    grid-area:close;
+
 }
 
 .form_edit {
@@ -18,6 +26,7 @@
     flex-direction: column;
     background-color:white;
     border-radius: 15px;
+    grid-area: edit;
 }
 
 .edit {
@@ -53,4 +62,44 @@
     font-weight: 900;
     font-size:18px;
     margin:0 auto;
+    /* transition: opacity 1s linear 0s; */
 }
+
+.edit_save:hover {
+    opacity:0.8;
+}
+
+.close_one {
+    width:5px;
+    height:30px;
+    background-color: white;
+    position: absolute;
+    top:0;
+    left:12.5px;
+    transform: rotate(45deg);
+    transition: all .2s ease-in 0s;
+    /* z-index: -1; */
+}
+
+.close_two {
+    width:5px;
+    height:30px;
+    background-color: white;
+    position: absolute;
+    top:0;
+    right:12.5px;
+    transform: rotate(-45deg);
+    transition: all .2s ease-in 0s;
+    /* z-index: -1; */
+}
+
+.form_button-close:hover .close_one {
+    transform: rotate(-45deg);
+}
+
+.form_button-close:hover .close_two {
+    transform: rotate(45deg);
+}
+
+
+
