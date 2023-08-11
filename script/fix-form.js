@@ -28,4 +28,3 @@ save_button.addEventListener("click", () => {
 closeButton.addEventListener("click", () => {
   fix_form.classList.remove("visible_form")
 })
-

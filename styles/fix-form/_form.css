@@ -51,7 +51,7 @@
 }
 
 .edit_work {
-    margin-bottom: 48px;;
+    margin-bottom: 48px;
 }
 
 .edit_save {
@@ -99,6 +99,32 @@
 
 .form_button-close:hover .close_two {
     transform: rotate(45deg);
+}
+
+@media screen and (max-width:755px) {
+    .form_edit {
+        width:282px;
+        height:322px;
+    }
+
+    .edit_title {
+        width:238px;
+        font-size: 18px;
+    }
+
+    .edit_save {
+        width:238px;
+        height:46px;
+        font-size: 14px;
+    }
+
+    .edit_name {
+        width:238px;
+    }
+
+    .edit_work {
+        width:238px;
+    }
 }
 
 
